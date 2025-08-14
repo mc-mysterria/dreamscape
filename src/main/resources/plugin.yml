@@ -1,0 +1,22 @@
+name: Dreamscape
+version: '1.0.0'
+main: net.mysterria.dreamscape.Dreamscape
+api-version: '1.21'
+authors: [ ikeepcalm ]
+
+permissions:
+  dreamscape.admin:
+    description: Allows management of dreamscape system
+    default: op
+  dreamscape.immune:
+    description: Immunity from dreamscape effects and kicks
+    default: op
+
+commands:
+  dreamscape:
+    description: Main dreamscape command
+    permission: dreamscape.admin
+    usage: |
+      /<command> <day> <hour> - Start countdown
+      /<command> lift - Lift the dreamscape
+      /<command> status - Check current status
